@@ -1,0 +1,22 @@
+p color = #ebebeb
+font-size-paragaraph = 1.25rem
+
+heaading color = #ff7600
+heading font size = 2rem
+
+background-color = #333  
+
+media queries 
+
+heading 
+font -size = 1.25rem
+
+para
+font-size =0.75rem 
+
+
+
+============================= v
+
+padding left ,right = 1.25rem
+padding top,bottom = 0.75rem 

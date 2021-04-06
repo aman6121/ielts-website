@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    
+<!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+  
+  <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- navbar starts -->
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo"> <img src="./images/logo.PNG"></div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                    <ul>
+                    <li><a href="../carousel-gallery/index.html">Home</a></li>
+                    <li><a href="../about us/index.html">About Us</a></li>
+                    <li><a href="../about ielts/index.html">About Ielts</a>
+                        <div class="sub-menu-1">
+               <ul>
+                 
+        <li> <a href="#overview">Overview of the Ielts exam </a></li>
+            <li> <a href="#academic">Academic Ielts </a> </li>
+            <li><a href="#general">General Ielts </a></li>
+            <li><a href="#reading">Ielts Reading </a></li>
+            <li><a href="#listening">Ielts Listening </a></li>
+            <li><a href="#speaking">Ielts speaking </a></li>
+        </ul>
+        </div>
+        </li>
+        <li><a href="./index.html">Contact Us</a></li>   
+              </ul>
+            </div>
+          </nav>
+    </div> 
+<!-- navabar ends -->
+
+        <!-- form starts -->
+        <div class="contain">
+            <h1 class="brand"><span>The</span> Ielts Academy</h1>
+<div class="wrapper animated bounceInLeft">
+    <div class="company-info">
+        <h3>The Ielts Academy</h3> 
+        <ul>
+            <li><i class = "fa fa-road"> </i> Indira Colony, Ramnagar Road, Kashipur</li>
+            <li><i class = "fa fa-phone"> </i> +91-9690007157</li>
+            <li><i class = "fa fa-envelope"> </i> amanbakshi8@gmail.com</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h3>Email Us</h3>  
+        <form action="https://formsubmit.co/amanbakshi8@gmail.com" method="POST"  enctype = "multipart/form-data">
+            <p><label>Name</label> <input type = "text" placeholder = " Full Name " name ="name" required></p>
+            <p> <label>Email Address </label> <input type = "email" name = "email" placeholder=" Email Address " required></p>
+            <p><label>Phone Number</label><input type= "text" name= "name" placeholder= " Phone Number "> </p>
+            <p class="full"><label>Message</label> <textarea name= "message" rows= "8" ></textarea></p>
+            <p><input type="file" name="attachment" accept="image/png, image/jpeg"></p>
+            <p class="full"><button type="submit">Send</button></p>
+        </form>
+</div>
+
+</div>
+</div> 
+<script src="./app.js"></script>
+</body>
+</html> 

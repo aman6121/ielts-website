@@ -1,0 +1,636 @@
+/* light coral and ebebeb  are good as a combo */
+
+ *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+} 
+
+
+/* navbar */
+.container {
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto; 
+  
+  }
+  
+  .navbar {
+    width: 100%; 
+    top :0;
+    display: flex;
+    position: relative;;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: #ebebeb;
+    }
+  
+  .logo img {
+    font-size: 1.5rem;
+    margin: .5rem;
+    width:90px;
+    height:40px
+    }
+    
+   .navbar-links {
+    height: 100%;
+    }
+    
+    .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    }
+    
+    .navbar-links li {
+    list-style: none;
+    margin: 0 , 0.25rem;
+    padding: 0.25rem;
+    }
+    
+    .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #ebebeb;
+    padding: 0.5rem;
+    font-size: 0.85em;
+    }
+    
+    .navbar-links li:hover {
+    background-color: #ff7600;
+    }
+    
+    .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    }
+    
+    .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    }
+    
+    
+    /* drop down menu start */
+    
+    .sub-menu-1 {
+    display: none;
+    z-index: 999;
+    }
+    
+    .navbar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: black;
+    }
+    
+    .navbar ul li:hover .sub-menu-1 ul {
+    display: block;
+    }
+    
+    .navbar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    border-bottom: 1px solid #ff7600;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    }
+    
+    .navbar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #ff7600;
+    }
+    
+    /* drop down menu ends  */
+  /* end of navbar */ 
+
+  /* ================================================ */
+  /* ================================================== */
+
+.wrapper {
+width: 100%;
+height: 100vh;
+background-color: #333;
+display: flex;
+position: relative;
+overflow: hidden;
+padding-bottom: 10px;
+}  
+
+.left-pane {  
+width: 45%;
+height: inherit;
+overflow: hidden;
+} 
+
+.left-pane .container {
+display: block;
+width: 90%;
+margin: 0 auto;
+position: relative;
+padding: 20px 0;
+color: #ebebeb;
+}
+
+.left-pane .container header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.left-pane .container header .logo h1 {
+font-family: 'Poppins', sans-serif;
+font-size: 1.25em;
+font-family: 900;
+}
+
+.left-pane .container section {
+position: relative;
+top: 3em; 
+width: 70%;
+display: block;
+margin: 0 auto;
+}
+
+.left-pane .container section .carousel-indicator {
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'poppins',sans-serif;
+font-weight: 700;
+font-size: 0.8em;
+margin-bottom: 30px;
+}
+
+.left-pane .container section .carousel-indicator :nth-child(2) {
+width: 110px;
+height: 3px;
+background-color: black;
+margin: 0 10px;
+}
+
+.left-pane .container section .content {
+font-family: 'poppins',sans-serif;
+margin-bottom: 60px;
+}
+
+.left-pane .container section .content h1 {
+font-size: 1.75em;
+font-weight: 700;
+text-transform: uppercase;
+margin-bottom: 20px;
+} 
+
+.left-pane .container section .content p {
+font-size: 1em;
+font-weight: 600;
+line-height: 1.6;
+}
+
+.left-pane .container section .carousel-nav {
+    display: flex;
+}
+
+.left-pane .container section .carousel-nav div .prev {
+margin-right: 15px;
+}
+
+/* ====== Right Pane */
+.right-pane {  
+width: 55%;
+height: inherit;
+overflow: hidden;
+}  
+
+.right-pane .view { 
+width: 95%;
+height: 80vh; 
+float: right;
+overflow: hidden;
+background: url(./images/ielts-6.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.right-pane .content {
+position: relative;
+width: 100%;
+height: 20vh;
+clear: both;
+}  
+
+.right-pane .content .facts {
+width: 50%;
+height: 40vh; 
+/* changed from 44vh to 35vh */
+background-color: #000;
+position: absolute;
+bottom: 0;
+z-index: 99;
+font-family: 'Mada', sans-serif;
+padding: 40px 0 40px  0px;
+}  
+
+.right-pane .content .facts .features {
+position: relative;
+width: 250px;
+height: 100%;
+color: #fff;
+display: block;
+margin: 0 auto;
+} 
+
+.right-pane .content .facts .features ul li{
+list-style: none;
+margin-bottom: 45px;
+}   
+
+.right-pane .content .facts .features ul li h3{
+font-size: 1em;
+font-weight: 600;
+margin-bottom: 4px;
+font-family: 'poppins',sans-serif;
+} 
+
+.right-pane .content .facts .features ul li p {
+font-weight: 200;
+font-size: 0.8em;
+}
+
+.right-pane .content .facts .features ul li .footage {
+width: inherit;
+height: 135px;
+background: url(./images/ielts-1.jpg) no-repeat;
+background-size: cover;
+border-radius: 4px;
+background-position: center;
+margin-bottom: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.right-pane .content .facts .features ul li .footage .play-button{
+width: 55px;
+height: 55px;
+background-color: #fff;
+color: #000;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.right-pane .content .facts .features a {
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+letter-spacing: 5px;
+font-size: 0.8rem;
+display: flex;
+align-items: center;
+position: absolute;
+bottom: 0;
+}  
+
+.right-pane .content .facts .features a span {  
+margin-left: 10px;
+} 
+
+.right-pane .content .facts .clip{
+width: 80%;
+display: block;
+margin: 0 auto;
+display: none; 
+position: relative;
+top: 2em;
+}
+
+.right-pane .content .facts .clip .close-button{
+font-size: 1.3em;
+position: absolute;
+z-index: 9999;
+right: 0;
+top: -1.5em;
+color:#fff;
+cursor: pointer;
+} 
+
+.right-pane .content .facts .clip .cloak{
+width: 100%;
+position: absolute;
+height: 475px;
+z-index: 99;
+right: 0;
+background: #000;
+}
+
+.right-pane .content .facts .clip video {
+width: 100%;
+height: 475px;
+object-fit: fill;
+} 
+
+.right-pane .content .facts .clip .caption {
+color: #fff;
+font-size: 1em;
+margin-top: 20px;
+overflow: hidden;
+display: none;
+} 
+
+.right-pane .content .facts .clip .caption h3{
+font-size: 1em;
+font-weight: 600;
+margin-bottom: 4px;
+font-family: 'Poppins',sans-serif;
+} 
+
+.right-pane .content .facts .clip .caption p {
+font-size: 0.85em;
+font-weight: 200;
+} 
+
+.right-pane .content .explore {
+width: 55%;
+height: inherit;
+background-color: #ffe7b4;
+float: right;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Mada',sans-serif;
+}  
+
+.right-pane .content .explore .item h3 {
+font-size: 1.3rem;
+font-weight: 800;
+margin-bottom: 10px;
+font-family: 'Poppins',sans-serif;
+}
+
+.right-pane .content .explore .item a {
+font-size: 1.3rem;
+color: #000;
+text-decoration: none;
+display: flex;
+align-items: center;
+} 
+
+.right-pane .content .explore .item a span {
+margin-right: 10px;
+} 
+
+
+/* =========MOBILE VERSION=============================================================== */
+
+/* ============================================================================= */
+/* ============================================================================= */
+
+/*  media queries for navbar */
+@media screen and (max-width: 500px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+        text-align: center;
+    }
+  
+    .navbar-links ul li a {
+        padding: .25rem 1rem;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }  
+  
+
+@media screen and (max-width: 500px){
+.wrapper {
+display: flex;
+flex-direction: column;
+}
+
+.left-pane {  
+width: 100vw;
+height: 100vh;
+} 
+
+.left-pane .container header .logo h1 {
+display: none;
+}
+    
+.left-pane .container {
+width: 100vw;
+height: 100vh;
+}
+
+.left-pane .container header {
+display: flex;
+flex-direction: column;
+}
+
+.left-pane .container section {
+top: 0;
+width: 100vw;
+height: 100vh;
+margin: 0 auto;
+padding: 2em;
+}
+    
+.left-pane .container section .carousel-indicator {
+font-size: 0.8em;
+margin-bottom: 20px;
+}
+
+.left-pane .container section .content h1 {
+font-size: 1em;
+font-weight: 700;
+text-align: center;
+margin-bottom: 15px;
+} 
+    
+.left-pane .container section .content p {
+font-size: 0.65em;
+font-weight: 400; 
+line-height: 1.6;
+}
+
+.right-pane {  
+display: flex;
+flex-direction:column ;
+width: 100vw;
+height: 100vh;
+}  
+    
+.right-pane .view { 
+ display: flex;
+flex-direction: column;
+align-items: center;
+width: 95vw;
+height: 100vh; 
+justify-content: flex-end;   
+overflow: hidden;  
+background: url(./images/ielts-6.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+
+.right-pane .content {
+display: flex;
+flex-direction:column ;
+width: 100vw;
+height: 100vh;
+}  
+    
+.right-pane .content .facts {
+display: flex;
+flex-direction:column ;
+justify-content: center;
+align-items: center;
+width: 60vw;
+height: 30vh; 
+padding: 80px 0 25px  0px;
+}  
+    
+.right-pane .content .facts .features {
+position: relative;
+width: 50vw;
+height: 70vh;
+} 
+
+.right-pane .content .facts .features ul li{
+list-style: none;
+margin-bottom: 35px;
+padding-top: 0.5em;  
+}   
+    
+.right-pane .content .facts .features ul li h3{
+font-size: 0.95em;
+} 
+ 
+.right-pane .content .facts .features ul li p {
+display: none;
+}
+    
+.right-pane .content .facts .features ul li .footage {
+/* width: 35vw; */
+height: 150px;
+margin-top: 4em;  
+background: url(./images/ielts-1.jpg) no-repeat;
+background-size: cover;
+border-radius: 4px;
+background-position: center;
+}
+
+.right-pane .content .facts .features a {
+font-size: 0.6em;
+display: flex;
+align-items: flex-end;
+/* position: absolute;
+bottom: 0; */
+}  
+    
+.right-pane .content .facts .features a span {  
+margin-left: 5px;
+} 
+    
+ .right-pane .content .facts .clip{
+width: 100vw;
+height: 5vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+display: none;  
+position: relative;
+top: 0.5em;
+}
+     
+/* .right-pane .content .facts .clip .cloak{
+width: 100vw;
+position: absolute;
+height: 50vh;
+right: 0;
+background: #000;
+
+} */
+        
+.right-pane .content .facts .clip video {
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 95vw;
+height: 45vh;
+padding: 1.5em;
+} 
+
+.right-pane .content .facts .clip .close-button{
+font-size: 1em;
+position: absolute;
+ z-index: 9999;
+right: 1em;
+top: 0;
+color:#fff;
+cursor: pointer;
+} 
+
+.right-pane .content .facts .features ul li p {
+display: none;
+}  
+            
+.right-pane .content .facts .clip .caption {
+display: none;
+} 
+        
+.right-pane .content .facts .clip .caption h3{
+display: none;
+} 
+
+.right-pane .content .facts .clip .caption p {
+display: none;
+} 
+
+.right-pane .content .explore {
+display: none;
+} 
+
+}
+        
+
+
+
+    
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/*  https://stackoverflow.com/questions/526035/how-can-i-position-my-div-at-the-bottom-of-its-container*/

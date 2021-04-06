@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+top :0;
+display: flex;
+position: relative;;
+justify-content: space-around;
+align-items: center;
+background-color:black;
+color: white;
+}
+
+.logo img {
+font-size: 1.5rem;
+margin: .5rem;
+width:90px;
+height:40px
+}
+
+.navbar-links {
+height: 100%;
+}
+
+.navbar-links ul {
+display: flex;
+margin: 0;
+padding: 0;
+width: 100%;
+margin: 0;
+padding: 0;
+justify-content: center;
+}
+
+.navbar-links li {
+list-style: none;
+margin: 0 , 0.25rem;
+padding: 0.25rem;
+}
+
+.navbar-links li a {
+display: block;
+text-decoration: none;
+color: white;
+padding: 0.5rem;
+font-size: 0.85em;
+}
+
+.navbar-links li:hover {
+background-color: #ff7600;
+}
+
+.toggle-button {
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 30px;
+height: 21px;
+}
+
+.toggle-button .bar {
+height: 3px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
+
+
+/* drop down menu start */
+
+.sub-menu-1 {
+display: none;
+z-index: 999;
+}
+
+.navbar ul li:hover .sub-menu-1 {
+display: block;
+position: absolute;
+background-color: black;
+}
+
+.navbar ul li:hover .sub-menu-1 ul {
+display: block;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li {
+width: 150px;
+border-bottom: 1px solid #ff7600;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+
+.navbar ul li:hover .sub-menu-1 ul li a:hover {
+color: #ff7600;
+}
+
+/* drop down menu ends  */
+
+/* carousel starts */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .slide.current {
+    opacity: 1;
+  }
+  
+  .slide .content {
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: #333;
+    padding: 15px;
+  }
+  
+  .slide .content h1 {
+    margin-bottom: 10px;
+    font-size: 1.75rem;
+    color: #ff7600;
+    text-transform: uppercase;
+  }
+  
+  .slide .content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #ebebeb;
+  }
+
+  .slide.current .content {
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+  
+  .buttons button#next {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+  }
+  
+  .buttons button#prev {
+    position: absolute;
+    top: 40%;
+    left: 15px;
+  }
+  
+  .buttons button {
+    border: 3px solid #333;
+    background-color: transparent; 
+    color: #333;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+  } 
+
+  .buttons button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+/* carousel ends *
+
+/* background images for carousel starts */
+.slide:first-child {
+    background: url("./images/ielts-1.jpg") no-repeat center top/cover;
+  }
+
+  .slide:nth-child(2) {
+    background: url("./images/ielts-2.jpg") no-repeat center top/cover;
+  }
+  .slide:nth-child(3) {
+    background: url("./images/ielts-3.jpg") no-repeat center top/cover;
+  }
+  .slide:nth-child(4) {
+    background: url("./images/ielts-4.png") no-repeat center top/cover;
+   
+  }
+  .slide:nth-child(5) {
+    background: url("./images/ielts-5.jpg") no-repeat center top/cover;
+   
+  }
+  .slide:nth-child(6) {
+    background: url("./images/ielts-6.jpg") no-repeat center top/cover;
+   
+  }
+
+/* background images for carousel ends */
+
+/* =============================================================================================================== */
+/* ================================================================================================================ */
+
+ 
+/*  media queries for navbar */
+@media screen and (max-width: 500px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .25rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* ======================================================== */
+/* ========================================================== */
+
+ /* media queries for carousel starts   */
+ @media screen and (max-width: 500px) {
+
+  .slider .content {
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+  }
+
+.slide.current .content {
+    transform: translateY(-100px);
+  } 
+
+  .slide .content h1 {
+   font-size: 1.25rem;
+    color: #ff7600;
+    text-transform: uppercase;
+  }
+
+  .slide .content p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #ebebeb;
+  }
+  .slide:first-child {
+    background-size: 100vw 90vh;
+  }
+
+  .slide:nth-child(2){
+    background-size: 100vw 90vh;
+  }
+
+  .slide:nth-child(3){
+    background-size: 100vw 90vh;
+  }
+
+  .slide:nth-child(4){
+    background-size: 100vw 90vh;
+  }
+
+  .slide:nth-child(5){
+    background-size: 100vw 90vh;
+  }
+
+  .slide:nth-child(6){
+    background-size: 100vw 90vh;
+  }
+
+}
+
+ /* media queries for carousel ends     */
